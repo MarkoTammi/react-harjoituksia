@@ -1,0 +1,8 @@
+.footerStyle {
+    background-color: brown;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0
+    }

@@ -1,0 +1,11 @@
+
+.boxStyle{
+    border: solid;
+    border-radius: 6%;
+    width: 10%;
+    margin: 3%;
+    padding: 1%;
+    border-color: blue;
+    background-color: azure;
+    display: inline-block;
+}
