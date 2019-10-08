@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CounterHooks from './CounterHooks/CounterHooks'
 
 
 class App extends React.Component{
@@ -12,19 +12,19 @@ class App extends React.Component{
   }
 
   handleAddCounter = () => {
-    console.log('clicked +1')
+    //console.log('clicked +1')
     this.setState({counter:this.state.counter+1})
   }
 
   handleDecreaseCounter = () => {
-    console.log('clicked -1')
+    //console.log('clicked -1')
     if (this.state.counter > 0){
-    this.setState({counter:this.state.counter-1})
+      this.setState({counter:this.state.counter-1})
     }
   }
 
   handleResetCounter = () => {
-    console.log('clicked 0')
+    //console.log('clicked 0')
     this.setState({counter:0})
   }
 
@@ -53,6 +53,7 @@ class App extends React.Component{
 
       return (
 
+      <div>
       <div className="border m-5 pb-4">
         <h5 style={{margin:'40px 0 15px 42%'}}>Counter</h5>
         
@@ -65,7 +66,8 @@ class App extends React.Component{
           <button style={styleButton} className="col" onClick={this.handleResetCounter}>Nollaa laskuria</button>
 
         </div>
-
+      </div>
+        <CounterHooks />
       </div>
     )
   }

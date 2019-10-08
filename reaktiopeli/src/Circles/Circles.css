@@ -1,6 +1,13 @@
 .Circle {
     width: 100px;
     height: 100px;
-    background-color: bisque;
     margin: 3px;
+}
+
+.CircleOff {
+    background-color: bisque;
+}
+
+.CircleOn {
+    background-color: red;
 }

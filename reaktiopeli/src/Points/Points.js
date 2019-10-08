@@ -3,11 +3,11 @@ import './Points.css';
 
 
 
-const Points = () => {
+const Points = (props) => {
 
     return (
         <div className="PointsMain">
-            <h2>0</h2>
+            <h2>{props.counter}</h2>
         </div>
     )
 }
